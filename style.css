@@ -1,0 +1,182 @@
+body{
+    font: 16px/1.5 arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.button{
+    height: 33px;
+    width:auto;
+    border: none;
+    border-radius: 3px;
+    background: red;
+}
+.dark{
+    color: #ffffff;
+    background-color: #35424a;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    width: 90%;
+}
+header{
+    background: #35424a;
+    min-height: 65px;
+    color: #ffffff;
+    padding-top: 30px;
+    border-bottom: 5px solid chocolate;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    padding: 0 20px 0 20px;
+    display: inline;
+}
+header #logo{
+    float: left;
+}
+header #logo h1{
+    margin: 0;
+    float: right;
+}
+header nav{
+    float: right;
+    margin-top: 10px
+}
+header .highlight, header .current a{
+    color: rgba(5, 141, 143, 0.797);
+    font-weight: bold;
+}
+header a:hover{
+    color: rgb(224, 227, 231);
+    font-weight: bold;
+}
+header img{
+    width: 35px;
+    border-radius: 8px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+#showcase{
+    min-height: 400px;
+    background: url(../images/showcase.avif) no-repeat 0 -400px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+   color: #313102;
+}
+#showcase h1{
+    padding-top:100px;
+     font-size: 55px; 
+}
+
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    padding-top: 20px;
+}
+#newsletter input{
+    padding: 10px;
+    height: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 29%;
+    padding: 20px;
+}
+#boxes .box img{
+    width: 90px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #e8491d;
+    color: #ffffff;
+    margin: 20px 0 5px 0;
+    padding: 6px;
+}
+
+#main-col{
+    float: left;
+    width: 65%;
+}
+.my-aside{
+    float: right;
+    width: 30%
+}
+.free{
+   padding: 100px;
+}
+.my-aside form input{
+    width: 80%;
+    height: 30px;
+}
+.my-aside form textarea{
+    width: 100%;
+}
+
+#services li{
+    background-color: #ece8e8;
+    padding: 15px;
+    border: #e6e6d7 2px solid;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 100%;
+} 
+
+@media(max-width:768px){
+    header #logo,header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #main-col,
+    .my-aside{
+        float: none;
+        text-align: center;
+        width: 100%;  
+    }
+    header{
+        padding-bottom: 20px; 
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .button{
+        display: block;
+        width: 100%;
+    }
+}
